@@ -10,8 +10,6 @@ const client = new Client({
   ssl: { rejectUnauthorized: false }
 });
 
-await client.connect();
-
 /* ---------- utils ---------- */
 
 // 재귀적으로 md 파일 수집
@@ -47,66 +45,123 @@ async function upsertCategory(slug, name, parentId, depth) {
 
 /* ---------- main ---------- */
 
-const files = walk(BASE_DIR);
+await client.connect();
+await client.query("BEGIN");
 
-// 기존 reports slug 목록 (삭제 감지용)
-const dbRes = await client.query("SELECT slug FROM reports");
-const dbSlugs = dbRes.rows.map(r => r.slug);
+try {
+  const files = walk(BASE_DIR);
 
-const fileSlugs = [];
+  if (files.length === 0) {
+    throw new Error("No markdown files found. Abort sync.");
+  }
 
-for (const file of files) {
-  const relative = file.replace(`${BASE_DIR}/`, ""); // TEST/test.md
-  const slug = relative.replace(".md", "");          // TEST/test
-  fileSlugs.push(slug);
+  /* ---------- reports 삭제 감지용 ---------- */
+  const dbReports = await client.query("SELECT slug FROM reports");
+  const dbReportSlugs = dbReports.rows.map(r => r.slug);
+  const fileReportSlugs = [];
 
-  const raw = fs.readFileSync(file, "utf-8");
-  const { data, content } = matter(raw);
+  /* ---------- categories 삭제 감지용 ---------- */
+  const dbCategories = await client.query("SELECT slug, depth FROM categories");
+  const dbCategorySlugs = dbCategories.rows.map(r => r.slug);
+  const fsCategorySlugs = new Set();
 
-  // ---------- categories 처리 ----------
-  const parts = relative.split("/");
-  const folderParts = parts.slice(0, -1); // md 제외
+  /* ---------- 파일 처리 ---------- */
+  for (const file of files) {
+    const relative = file.replace(`${BASE_DIR}/`, "");
+    const slug = relative.replace(".md", "");
+    fileReportSlugs.push(slug);
 
-  let parentId = null;
-  let currentSlug = "";
+    const raw = fs.readFileSync(file, "utf-8");
+    const { data, content } = matter(raw);
 
-  for (let i = 0; i < folderParts.length; i++) {
-    const name = folderParts[i];
-    currentSlug = currentSlug ? `${currentSlug}/${name}` : name;
+    // Front Matter 파싱
+    const title = data.title ?? slug.split("/").pop();
+    const authorType = data.author_type ?? "unknown";
+    const tags = Array.isArray(data.tags) ? data.tags : [];
+    const createdAt = data.date ? new Date(data.date) : new Date();
 
-    parentId = await upsertCategory(
-      currentSlug,
-      name,
-      parentId,
-      i + 1
+    // ---------- categories 처리 ----------
+    const parts = relative.split("/");
+    const folderParts = parts.slice(0, -1);
+
+    let parentId = null;
+    let currentSlug = "";
+
+    for (let i = 0; i < folderParts.length; i++) {
+      const name = folderParts[i];
+      currentSlug = currentSlug ? `${currentSlug}/${name}` : name;
+
+      fsCategorySlugs.add(currentSlug);
+
+      parentId = await upsertCategory(
+        currentSlug,
+        name,
+        parentId,
+        i + 1
+      );
+    }
+
+    // ---------- reports upsert (변경 감지) ----------
+    await client.query(
+      `
+      INSERT INTO reports (
+        slug,
+        title,
+        content_md,
+        category_id,
+        author_type,
+        tags,
+        created_at
+      )
+      VALUES ($1, $2, $3, $4, $5, $6, $7)
+      ON CONFLICT (slug) DO UPDATE SET
+        title = EXCLUDED.title,
+        content_md = EXCLUDED.content_md,
+        category_id = EXCLUDED.category_id,
+        author_type = EXCLUDED.author_type,
+        tags = EXCLUDED.tags
+      WHERE reports.content_md IS DISTINCT FROM EXCLUDED.content_md
+      `,
+      [
+        slug,
+        title,
+        content,
+        parentId,
+        authorType,
+        tags,
+        createdAt
+      ]
     );
   }
 
-  // ---------- reports 처리 ----------
-  await client.query(
-    `
-    INSERT INTO reports (slug, title, content_md, category_id, created_at, updated_at)
-    VALUES ($1, $2, $3, $4, NOW(), NOW())
-    ON CONFLICT (slug) DO UPDATE SET
-      title = EXCLUDED.title,
-      content_md = EXCLUDED.content_md,
-      category_id = EXCLUDED.category_id,
-      updated_at = NOW()
-    `,
-    [
-      slug,
-      data.title ?? slug.split("/").pop(),
-      content,
-      parentId
-    ]
-  );
-}
-
-// ---------- 삭제 동기화 ----------
-for (const slug of dbSlugs) {
-  if (!fileSlugs.includes(slug)) {
-    await client.query("DELETE FROM reports WHERE slug = $1", [slug]);
+  /* ---------- reports 삭제 ---------- */
+  for (const slug of dbReportSlugs) {
+    if (!fileReportSlugs.includes(slug)) {
+      await client.query(
+        "DELETE FROM reports WHERE slug = $1",
+        [slug]
+      );
+    }
   }
-}
 
-await client.end();
+  /* ---------- categories 삭제 (하위부터) ---------- */
+  const categoriesToDelete = dbCategories.rows
+    .filter(c => !fsCategorySlugs.has(c.slug))
+    .sort((a, b) => b.depth - a.depth);
+
+  for (const cat of categoriesToDelete) {
+    await client.query(
+      "DELETE FROM categories WHERE slug = $1",
+      [cat.slug]
+    );
+  }
+
+  await client.query("COMMIT");
+  console.log("✅ Sync completed successfully.");
+} catch (err) {
+  await client.query("ROLLBACK");
+  console.error("❌ Sync failed. Rolled back.", err);
+  process.exit(1);
+} finally {
+  await client.end();
+}
