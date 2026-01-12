@@ -1,5 +1,5 @@
 ---
-title: "카카오톡 분석 및 웹 클라이언트 구현 종합 보고서"
+title: "01. 카카오톡 분석 및 웹 클라이언트 구현 종합 보고서"
 tags: ["kakaotalk", "reverse-engineering", "protocol-analysis", "security"]
 author_type: "admin"
 date: 2026-01-13
@@ -70,3 +70,4 @@ JADX 및 Ghidra를 통해 안드로이드 앱의 핵심 네이티브 라이브�
 
 ### 5.3 최종 구현
 *   확인된 암호화 로직(AES Key/IV 등)을 Python(`PyCryptodome`)으로 이식하여, `request_passcode.json` 요청을 성공시키고 OAuth 토큰을 획득합니다.
+
