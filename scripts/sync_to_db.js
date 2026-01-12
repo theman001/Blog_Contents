@@ -3,7 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import { Client } from "pg";
 
-const BASE_DIR = "./reports";
+const BASE_DIR = "./contents";
 
 const client = new Client({
   connectionString: process.env.DATABASE_URL,
