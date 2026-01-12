@@ -27,12 +27,12 @@ contents/
 - 파일명 권장 규칙:
 
 ```
-YYYY-MM-DD-title.md
+Num. title.md
 ```
 
 예시:
 ```
-2026-01-12-static-web-hosting-test.md
+01. static-web-hosting-test.md
 ```
 
 ---
