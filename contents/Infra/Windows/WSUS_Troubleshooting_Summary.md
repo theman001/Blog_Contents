@@ -1,0 +1,163 @@
+---
+title: "WSUS 트러블슈팅 정리 – 등록 지연부터 Runtime Error까지"
+tags: ["wsus", "windows-update", "gpo", "troubleshooting"]
+author_type: "admin"
+date: 2026-01-13
+---
+
+## 개요
+
+이 게시글은 실제 운영 환경에서 발생했던 **WSUS(Windows Server Update Services)** 관련 트러블슈팅 과정을  
+**주제별 / 과정별**로 정리한 기록이다.
+
+문제는 단일 원인이 아닌 **GPO, 클라이언트 동작 방식, IIS 설정, Application Pool Identity** 등  
+여러 요소가 복합적으로 얽혀 있었으며,  
+각 단계별로 확인해야 할 포인트와 결론을 남기는 것을 목표로 한다.
+
+---
+
+## 1️⃣ WSUS에 PC가 등록되지 않는 문제
+
+### 🔍 증상
+- GPO로 WSUS 서버 주소를 정상 배포했음에도  
+  WSUS 콘솔에 등록되는 PC가 극히 적음
+- PC는 켜져 있으나 로그인하지 않은 상태가 대부분
+
+### 🧠 핵심 정리
+| 항목 | 결과 |
+|----|----|
+| GPO 적용 | 로그인 여부와 관계없이 **백그라운드 적용됨** |
+| WSUS 등록 트리거 | **로그인 또는 재부팅 시** 발생 |
+| 로그인 상태에서 gpupdate | ❌ WSUS 등록 트리거 발생 안 함 |
+
+### ⚠️ 오해 포인트
+- `gpupdate /force`를 실행하면 WSUS 등록이 될 것이라 생각 → ❌
+- PC가 켜져 있으면 WSUS에 자동 등록될 것이라 생각 → ❌
+
+### ✅ 결론
+> WSUS 등록은 **Windows Update 스캔 트리거**가 핵심이며  
+> 이는 *로그인 / 재부팅* 또는 *수동 스캔*이 필요함
+
+---
+
+## 2️⃣ usoclient 명령어의 실제 역할
+
+### 사용한 명령어
+`
+usoclient StartScan
+usoclient ReportNow
+`
+
+### 차이점 정리
+| 명령어 | 설명 |
+|----|----|
+| StartScan | 업데이트 검색 수행 |
+| ReportNow | 검색 결과를 WSUS 서버로 보고 |
+
+### 중요한 사실
+- `StartScan`만 실행해도 **즉시 WSUS에 등록되지 않을 수 있음**
+- `ReportNow`는 **보고 트리거** 역할
+
+### 권장 테스트 순서
+`
+usoclient StartScan
+usoclient ReportNow
+`
+
+---
+
+## 3️⃣ Dual Scan 문제로 오해했던 케이스
+
+### 의심 배경
+- 일부 업데이트 요청이 WSUS가 아닌  
+  Microsoft Update 서버로 향하는 현상
+
+### 검증 포인트
+- GPO에서 **Dual Scan 비활성화 정책** 적용
+- `gpresult /r` 확인
+
+### 결과
+- Dual Scan 정책 자체는 정상 적용됨
+- 문제의 본질은 **WSUS 서버 측 처리 오류**
+
+### ✅ 결론
+> Dual Scan 문제 ❌  
+> → 서버 IIS 설정 문제 ⭕
+
+---
+
+## 4️⃣ WSUS Runtime Error 발생
+
+### 🔍 증상
+- WSUS 콘솔 접속 시 Runtime Error 발생
+- 아래 URL 접근 시 오류 화면 출력
+
+`
+http://WSUS:8530/ReportingWebService/ReportingWebService.asmx
+`
+
+### 서버 환경 확인
+- WSUS 서버 OS: Windows Server 2022
+- WSUS Pool Identity: **NetworkService**
+
+---
+
+## 5️⃣ 핵심 원인 – WsusPool Identity 설정 오류
+
+### 🔥 결정적 원인
+- `WsusPool`의 **Application Pool Identity가 NetworkService로 설정**
+- Microsoft 권장 설정은 **ApplicationPoolIdentity**
+
+### 영향
+- WSUS WebService 권한 문제 발생
+- 클라이언트 보고 실패
+- 콘솔 Runtime Error 발생
+
+### 수정 방법
+1. IIS 관리자 실행
+2. Application Pools → WsusPool
+3. Advanced Settings
+4. Identity → `ApplicationPoolIdentity`로 변경
+5. IIS 재시작
+
+### ✅ 수정 후 결과
+- Runtime Error 해결
+- ReportingWebService 정상 응답
+- 클라이언트 WSUS 등록 정상화
+
+---
+
+## 6️⃣ Identity가 NetworkService로 변경된 이유 추적
+
+### 가능성 있는 원인
+- 수동 IIS 설정 변경
+- WSUS 재설치/업데이트 과정
+- 보안 하드닝 스크립트 또는 템플릿 적용
+
+### 확인 포인트
+- **System / Application Event Log**
+- IIS 관련 이벤트
+- WSUS 업데이트 적용 시점
+
+> 자동으로 변경되는 경우는 드물며  
+> **운영 중 설정 변경 가능성**이 가장 큼
+
+---
+
+## 7️⃣ Microsoft 권장 설정 요약
+
+### 공식 권장 사항
+- WsusPool Identity: `ApplicationPoolIdentity`
+- NTFS 권한은 자동 관리
+- NetworkService 사용 ❌
+
+> Identity 변경은 WSUS 장애의 **치명적인 원인**이 될 수 있음
+
+---
+
+## 마무리 정리
+
+### 이번 트러블의 핵심 교훈
+- WSUS 문제는 **클라이언트보다 서버 쪽 설정**을 먼저 의심할 것
+- GPO 적용 ≠ WSUS 등록
+- IIS Application Pool Identity는 매우 중요
