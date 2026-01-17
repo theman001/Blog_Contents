@@ -1,6 +1,11 @@
 ---
 title: "03. Markdown 렌더링 & UI 설계" [Vanilla JS 기반 블로그 프로젝트]
-tags: ["blog-project", "markdown", "ui-ux", "frontend", "design"]
+tags: 
+  - blog-project
+  - markdown
+  - ui-ux
+  - frontend
+  - design
 author_type: "admin"
 date: 2026-01-15
 ---
