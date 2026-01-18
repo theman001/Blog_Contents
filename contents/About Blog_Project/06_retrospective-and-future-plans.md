@@ -1,6 +1,6 @@
 ---
 title: 06. 회고와 향후 개선 계획
-description: “[Vanilla JS 기반 블로그 프로젝트]”
+description: [Vanilla JS 기반 블로그 프로젝트]
 tags:
   - blog-project
   - retrospective

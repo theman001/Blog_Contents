@@ -1,6 +1,6 @@
 ---
 title: 01. 기획 의도와 전체 개요
-description: [Vanilla JS 기반 블로그 프로젝트]
+description: 블로그 프로젝트 기획 의도와 전체 개요 [Vanilla JS 기반 블로그 프로젝트]
 tags:
   - blog-project
   - vanilla-js

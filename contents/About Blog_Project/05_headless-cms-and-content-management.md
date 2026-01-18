@@ -1,6 +1,6 @@
 ---
 title: 05. 게시글 관리 구조와 Headless CMS 설계
-description: “[Vanilla JS 기반 블로그 프로젝트]”
+description: [Vanilla JS 기반 블로그 프로젝트]
 tags: ["blog-project", "cms", "neondb", "headless-cms", "markdown"]
 author_type: "admin"
 date: 2026-01-17

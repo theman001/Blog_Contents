@@ -1,6 +1,6 @@
 ---
 title: 04. Cloudflare Pages 배포 구조
-description: “[Vanilla JS 기반 블로그 프로젝트]”
+description: [Vanilla JS 기반 블로그 프로젝트]
 tags: ["blog-project", "deployment", "cloudflare", "static-site", "cdn"]
 author_type: "admin"
 date: 2026-01-17
