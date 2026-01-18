@@ -1,5 +1,6 @@
 ---
-title: "AWS 비용 절감 전략 관점에서 SP(Service Provider)와 IR(Incident Response)의 역할"
+title: AWS 비용 절감 전략
+description: AWS 비용 절감 전략 관점에서 SP(Service Provider)와 IR(Incident Response)의 역할
 tags: ["aws", "cost-optimization", "finops", "operations", "security"]
 author_type: "admin"
 date: 2026-01-15
