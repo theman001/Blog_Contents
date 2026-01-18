@@ -1,6 +1,6 @@
 ---
 title: 03. Markdown 렌더링 & UI 설계
-description: [Vanilla JS 기반 블로그 프로젝트]
+description: Vanilla JS 기반 블로그 프로젝트에서 Markdown 콘텐츠를 HTML로 렌더링하는 구조와, 가독성을 중심으로 한 UI/UX 설계 기준을 정리한다.
 tags: 
   - blog-project
   - markdown
