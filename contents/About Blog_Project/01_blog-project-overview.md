@@ -1,6 +1,6 @@
 ---
 title: 01. 기획 의도와 전체 개요
-description: [Vanilla JS 기반 블로그 프로젝트] Vanilla JS만으로 구현한 개인 블로그 프로젝트의 기획 의도와 전체 구조 개요. 프레임워크 없이 SPA를 설계한 이유와 프로젝트 방향성을 정리한다.
+description: Vanilla JS만으로 구현한 개인 블로그 프로젝트의 기획 의도와 전체 구조 개요. 프레임워크 없이 SPA를 설계한 이유와 프로젝트 방향성을 정리한다.
 tags:
   - blog-project
   - vanilla-js
