@@ -1,6 +1,6 @@
 ---
 title: "00. AWS 핵심 용어·서비스·역할 정리"
-description: AWS 용어/서비스/역할별 정리 문서
+description: AWS 실무에서 가장 많이 사용되는 핵심 용어·서비스·역할을 사용 빈도 기준으로 정리한 레퍼런스 문서. 운영·보안·인프라 담당자를 위한 빠른 참고용 정리.
 tags: ["aws", "cloud", "infrastructure", "iam", "security"]
 author_type: "admin"
 date: 2026-01-13
