@@ -1,6 +1,6 @@
 ---
 title: "00. Windows AD 조인 방법 간단 정리"
-description: 사내 AD 환경에서 신규PC를 AD에 Join시키는 방법에 대한 가이드
+description: 사내 Active Directory 환경에서 Windows PC를 도메인에 조인하는 기본 절차를 정리한다. 신규 PC 도입이나 테스트 VM 구성 시 바로 참고할 수 있는 실무 가이드.
 tags: ["active-directory", "windows", "domain"]
 author_type: "admin"
 date: 2026-01-13
