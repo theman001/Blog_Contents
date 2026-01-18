@@ -1,6 +1,6 @@
 ---
 title: 06. 회고와 향후 개선 계획
-description: [Vanilla JS 기반 블로그 프로젝트]
+description: Vanilla JS 기반 블로그 프로젝트를 마무리하며 전체 구조를 회고하고, UX·SEO·기능 개선을 포함한 향후 발전 방향을 정리한다.
 tags:
   - blog-project
   - retrospective
