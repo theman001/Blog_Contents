@@ -1,6 +1,6 @@
 ---
 title: "01. Active Directory Custom Attribute 추가 방법 정리"
-description: 기타 솔루션 제품과의 연동을 위한 AD Custom Attribute 추가
+description: DRM·NAC·IAM 등 외부 솔루션 연동을 위해 Active Directory에 Custom Attribute를 추가하는 방법을 정리한다. AD 스키마 확장 절차와 운영 시 주의사항을 실무 관점에서 설명한다.
 tags: ["active-directory", "schema", "custom-attribute", "ldap"]
 author_type: "admin"
 date: 2026-01-13
