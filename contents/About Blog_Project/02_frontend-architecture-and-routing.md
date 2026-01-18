@@ -1,6 +1,6 @@
 ---
 title: 02. Frontend Architecture & SPA 라우팅
-description: [Vanilla JS 기반 블로그 프로젝트]
+description: Vanilla JS 기반 블로그 프로젝트의 프론트엔드 아키텍처와 SPA 라우팅 구조를 정리한다. History API를 활용한 CSR 구조와 페이지 모듈 분리 설계 과정을 다룬다.
 tags:
   - blog-project
   - frontend
