@@ -1,6 +1,6 @@
 ---
 title: 05. 게시글 관리 구조와 Headless CMS 설계
-description: [Vanilla JS 기반 블로그 프로젝트]
+description: Vanilla JS 기반 블로그 프로젝트에서 게시글을 코드와 분리해 관리하는 구조를 정리한다. Markdown 콘텐츠를 NeonDB와 동기화하여 Headless CMS처럼 운영하는 설계를 다룬다.
 tags: ["blog-project", "cms", "neondb", "headless-cms", "markdown"]
 author_type: "admin"
 date: 2026-01-17
