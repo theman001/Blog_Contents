@@ -1,5 +1,6 @@
 ---
 title: "00. AWS 핵심 용어·서비스·역할 정리"
+description: AWS 용어/서비스/역할별 정리 문서
 tags: ["aws", "cloud", "infrastructure", "iam", "security"]
 author_type: "admin"
 date: 2026-01-13

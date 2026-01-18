@@ -1,5 +1,6 @@
 ---
 title: "01. Active Directory Custom Attribute 추가 방법 정리"
+description: 기타 솔루션 제품과의 연동을 위한 AD Custom Attribute 추가
 tags: ["active-directory", "schema", "custom-attribute", "ldap"]
 author_type: "admin"
 date: 2026-01-13

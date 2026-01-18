@@ -1,5 +1,6 @@
 ---
-title: 03. Markdown 렌더링 & UI 설계 [Vanilla JS 기반 블로그 프로젝트]
+title: 03. Markdown 렌더링 & UI 설계
+description: “[Vanilla JS 기반 블로그 프로젝트]”
 tags: 
   - blog-project
   - markdown

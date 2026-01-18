@@ -1,7 +1,13 @@
 ---
-title: 06. 회고와 향후 개선 계획 [Vanilla JS 기반 블로그 프로젝트]
-tags: ["blog-project", "retrospective", "ux", "seo", "improvement"]
-author_type: "admin"
+title: 06. 회고와 향후 개선 계획
+description: “[Vanilla JS 기반 블로그 프로젝트]”
+tags:
+  - blog-project
+  - retrospective
+  - ux
+  - seo
+  - improvement
+author_type: admin
 date: 2026-01-17
 ---
 

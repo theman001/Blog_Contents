@@ -1,7 +1,12 @@
 ---
-title: "00. 카카오톡 분석 및 웹 클라이언트 구현 종합 보고서"
-tags: ["kakaotalk", "reverse-engineering", "protocol-analysis", "security"]
-author_type: "admin"
+title: 00. 카카오톡 분석 및 웹 클라이언트 구현 종합 보고서
+description: "[카카오톡 웹 클라이언트 구현 프로젝트]"
+tags:
+  - kakaotalk
+  - reverse-engineering
+  - protocol-analysis
+  - security
+author_type: admin
 date: 2026-01-09
 ---
 

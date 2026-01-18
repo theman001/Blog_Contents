@@ -1,5 +1,6 @@
 ---
-title: 02. Frontend Architecture & SPA 라우팅 [Vanilla JS 기반 블로그 프로젝트]
+title: 02. Frontend Architecture & SPA 라우팅
+description: “[Vanilla JS 기반 블로그 프로젝트]”
 tags:
   - blog-project
   - frontend
