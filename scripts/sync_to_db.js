@@ -79,6 +79,8 @@ try {
     const authorType = data.author_type ?? "unknown";
     const tags = Array.isArray(data.tags) ? data.tags : [];
     const createdAt = data.date ? new Date(data.date) : new Date();
+    const description = data.description ?? null;
+
 
     // ---------- categories 처리 ----------
     const parts = relative.split("/");
@@ -107,24 +109,29 @@ try {
       INSERT INTO reports (
         slug,
         title,
+        description,
         content_md,
         category_id,
         author_type,
         tags,
         created_at
       )
-      VALUES ($1, $2, $3, $4, $5, $6, $7)
+      VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
       ON CONFLICT (slug) DO UPDATE SET
         title = EXCLUDED.title,
+        description = EXCLUDED.description,
         content_md = EXCLUDED.content_md,
         category_id = EXCLUDED.category_id,
         author_type = EXCLUDED.author_type,
         tags = EXCLUDED.tags
-      WHERE reports.content_md IS DISTINCT FROM EXCLUDED.content_md
+      WHERE
+        reports.content_md IS DISTINCT FROM EXCLUDED.content_md
+        OR reports.description IS DISTINCT FROM EXCLUDED.description
       `,
       [
         slug,
         title,
+        description,
         content,
         parentId,
         authorType,
