@@ -44,6 +44,7 @@ Num. title.md
 ```md
 ---
 title: "정적 웹 호스팅 테스트용 글"
+description: 
 tags: ["test"]
 author_type: "admin"
 date: 2026-01-12
