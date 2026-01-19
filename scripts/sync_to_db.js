@@ -3,7 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import { Client } from "pg";
 
-const BASE_DIR = "./contents";
+const BASE_DIR = "contents";
 
 /**
  * R2 Public Asset Domain
@@ -92,7 +92,7 @@ try {
 
   /* ---------- 파일 처리 ---------- */
   for (const file of files) {
-    const relative = file.replace(`${BASE_DIR}/`, "");
+    const relative = path.relative(BASE_DIR, file);
     const slug = relative.replace(".md", "");
     fileReportSlugs.push(slug);
 
