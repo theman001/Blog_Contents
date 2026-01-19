@@ -5,6 +5,12 @@ import { Client } from "pg";
 
 const BASE_DIR = "./contents";
 
+/**
+ * R2 Public Asset Domain
+ * 예: https://asset.taeuk.site/posts/{slug}/{filename}
+ */
+const R2_ASSET_BASE = "https://asset.taeuk.site/posts";
+
 const client = new Client({
   connectionString: process.env.DATABASE_URL,
   ssl: { rejectUnauthorized: false }
@@ -43,6 +49,23 @@ async function upsertCategory(slug, name, parentId, depth) {
   return res.rows[0].id;
 }
 
+/**
+ * markdown 내 ./assets/* 경로를
+ * R2 public URL로 rewrite
+ *
+ * ![alt](./assets/image.png)
+ * → ![alt](https://asset.taeuk.site/posts/{slug}/image.png)
+ */
+function rewriteMediaLinks(markdown, slug) {
+  return markdown.replace(
+    /!\[([^\]]*)\]\((\.\/assets\/[^)]+)\)/g,
+    (_, alt, assetPath) => {
+      const filename = path.basename(assetPath);
+      return `![${alt}](${R2_ASSET_BASE}/${slug}/${filename})`;
+    }
+  );
+}
+
 /* ---------- main ---------- */
 
 await client.connect();
@@ -62,7 +85,6 @@ try {
 
   /* ---------- categories 삭제 감지용 ---------- */
   const dbCategories = await client.query("SELECT slug, depth FROM categories");
-  const dbCategorySlugs = dbCategories.rows.map(r => r.slug);
   const fsCategorySlugs = new Set();
 
   /* ---------- 파일 처리 ---------- */
@@ -81,6 +103,8 @@ try {
     const createdAt = data.date ? new Date(data.date) : new Date();
     const description = data.description ?? null;
 
+    // ---------- markdown media rewrite ----------
+    const rewrittenContent = rewriteMediaLinks(content, slug);
 
     // ---------- categories 처리 ----------
     const parts = relative.split("/");
@@ -103,7 +127,7 @@ try {
       );
     }
 
-    // ---------- reports upsert (변경 감지) ----------
+    // ---------- reports upsert ----------
     await client.query(
       `
       INSERT INTO reports (
@@ -132,7 +156,7 @@ try {
         slug,
         title,
         description,
-        content,
+        rewrittenContent,
         parentId,
         authorType,
         tags,
@@ -164,10 +188,10 @@ try {
   }
 
   await client.query("COMMIT");
-  console.log("✅ Sync completed successfully.");
+  console.log("✅ sync_to_db completed successfully.");
 } catch (err) {
   await client.query("ROLLBACK");
-  console.error("❌ Sync failed. Rolled back.", err);
+  console.error("❌ sync_to_db failed. Rolled back.", err);
   process.exit(1);
 } finally {
   await client.end();
