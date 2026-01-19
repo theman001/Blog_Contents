@@ -57,14 +57,17 @@ async function upsertCategory(slug, name, parentId, depth) {
  * → ![alt](https://asset.taeuk.site/posts/{slug}/image.png)
  */
 function rewriteMediaLinks(markdown, slug) {
+  const base = slug ? `${R2_ASSET_BASE}/${slug}` : R2_ASSET_BASE;
+
   return markdown.replace(
     /!\[([^\]]*)\]\((\.\/assets\/[^)]+)\)/g,
     (_, alt, assetPath) => {
       const filename = path.basename(assetPath);
-      return `![${alt}](${R2_ASSET_BASE}/${slug}/${filename})`;
+      return `![${alt}](${base}/${filename})`;
     }
   );
 }
+
 
 /* ---------- main ---------- */
 
@@ -104,8 +107,11 @@ try {
     const description = data.description ?? null;
 
     // ---------- markdown media rewrite ----------
-    const rewrittenContent = rewriteMediaLinks(content, slug);
+    let assetSlug = path.posix.dirname(slug);
+    if (assetSlug === ".") assetSlug = ""; 
 
+    const rewrittenContent = rewriteMediaLinks(content, assetSlug);
+    
     // ---------- categories 처리 ----------
     const parts = relative.split("/");
     const folderParts = parts.slice(0, -1);
