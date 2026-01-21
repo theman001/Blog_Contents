@@ -1,7 +1,7 @@
 ---
 title: "[카카오톡-정적분석] #3. Cheat Sheet"
 description: "카카오톡 Android 클라이언트의 네이티브·자바 레벨 정적 분석을 통해 도출한 인증·암호화 구조 핵심 치트 시트로, AES 키·IV, X-VC 생성 규칙, uvc3 페이로드 구성 및 주요 에러 코드 분석 결과를 정리한다."
-tags: ["kakaotalk", "android", "reversing", "cryptography", "static-analysis", "mobile-security"]
+tags: ["kakaotalk", "android", "reversing", "cryptography", "static-analysis", "mobile-security", "cheet-sheet"]
 author_type: "admin"
 date: 2026-01-21
 ---
