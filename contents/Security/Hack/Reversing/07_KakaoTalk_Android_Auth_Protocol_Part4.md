@@ -1,5 +1,5 @@
 ---
-title: "#2 [Reverse Engineering] 카카오톡 안드로이드 인증 프로토콜 분석 4편"
+title: "[카카오톡-정적분석] #2. 카카오톡 안드로이드 인증 프로토콜 분석 4편"
 description: "libtalkand_aes.so 네이티브 라이브러리를 분석하여 AES-256-CBC 암호화 로직과 하드코딩된 Key·IV를 식별하고, Device-Info 내부 토큰 uvc3의 실제 구조와 역할을 분석한다."
 tags: ["reverse-engineering", "android", "native-library", "aes-256", "ghidra", "kakaotalk"]
 author_type: "admin"
