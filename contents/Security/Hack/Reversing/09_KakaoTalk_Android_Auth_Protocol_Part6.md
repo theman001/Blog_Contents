@@ -1,5 +1,5 @@
 ---
-title: "#2 [Reverse Engineering] 카카오톡 안드로이드 인증 프로토콜 분석 6편"
+title: "[카카오톡-정적분석] #2. 카카오톡 안드로이드 인증 프로토콜 분석 6편"
 description: "카카오톡 인증 프로토콜 정적 분석 시리즈의 결말로, 완성도 높은 구현에도 불구하고 서버 검증을 통과하지 못한 이유를 정리하고 동적 분석(Frida)으로의 전환이 필연적이었던 배경을 설명한다."
 tags: ["reverse-engineering", "android", "static-analysis", "dynamic-analysis", "frida", "kakaotalk"]
 author_type: "admin"
