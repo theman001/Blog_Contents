@@ -1,5 +1,5 @@
 ---
-title: "#2 [Reverse Engineering] 카카오톡 안드로이드 인증 프로토콜 분석 5편"
+title: "[카카오톡-정적분석] #2. 카카오톡 안드로이드 인증 프로토콜 분석 5편"
 description: "uvc3 페이로드의 복잡한 데이터 구조를 재현하기 위해 자율형 AI 에이전트 기반 병렬 분석을 도입하고, 정적 분석의 한계가 드러난 지점을 정리한다."
 tags: ["reverse-engineering", "android", "native-library", "uvc3", "automation", "kakaotalk"]
 author_type: "admin"
