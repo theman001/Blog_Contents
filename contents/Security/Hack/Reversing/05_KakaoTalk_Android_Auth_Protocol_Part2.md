@@ -100,7 +100,7 @@ Retrofit은 다음 조건에 따라 직렬화 결과가 달라진다.
 ### 4.1 유령 필드 `f`
 `PhoneNumberParams` 내부에는  
 문서화되지 않은 또 하나의 필드(`f`)가 존재하며,  
-이 값은 **USIM 정보(simParams)**를 담고 있다.
+이 값은 **USIM 정보(simParams) **를 담고 있다.
 
 특징은 다음과 같다.
 
