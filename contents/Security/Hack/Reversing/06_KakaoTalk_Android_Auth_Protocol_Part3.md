@@ -1,5 +1,5 @@
 ---
-title: "#2 [Reverse Engineering] 카카오톡 안드로이드 인증 프로토콜 분석 3편"
+title: "[카카오톡-정적분석] #2. 카카오톡 안드로이드 인증 프로토콜 분석 3편"
 description: "자바 레이어 분석의 한계를 넘어서기 위해 JNI 구조와 네이티브 라이브러리(.so)를 분석하고, 기기 인증과 -500 오류의 핵심 원인이 되는 네이티브 로직을 추적한다."
 tags: ["reverse-engineering", "android", "jni", "native-library", "ghidra", "kakaotalk"]
 author_type: "admin"
