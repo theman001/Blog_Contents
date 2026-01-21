@@ -1,5 +1,5 @@
 ---
-title: "#2 [Reverse Engineering] 카카오톡 안드로이드 인증 프로토콜 분석 2편"
+title: "[카카오톡-정적분석] #2. 카카오톡 안드로이드 인증 프로토콜 분석 2편"
 description: "JADX 기반 정적 분석을 통해 카카오톡 안드로이드 인증 과정의 핵심 요소인 X-VC 헤더 생성 로직과 PhoneNumberParams 직렬화 구조를 분석하고, -500 오류의 구조적 원인을 추적한다."
 tags: ["reverse-engineering", "android", "jadx", "authentication", "kakaotalk", "protocol-analysis"]
 author_type: "admin"
