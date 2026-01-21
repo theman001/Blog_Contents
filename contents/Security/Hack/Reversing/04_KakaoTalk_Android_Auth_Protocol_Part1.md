@@ -1,5 +1,5 @@
 ---
-title: "#2 [Reverse Engineering] 카카오톡 안드로이드 인증 프로토콜 분석 1편"
+title: "[카카오톡-정적분석] #2. 카카오톡 안드로이드 인증 프로토콜 분석 1편"
 description: "카카오톡 안드로이드 인증 프로토콜 분석 연재의 첫 글로, 실제 트래픽 관찰과 패킷 분석을 통해 기기 등록 단계에서 발생하는 -500 에러의 원인을 추적한 초기 조사 기록이다."
 tags: ["reverse-engineering", "android", "authentication", "kakaotalk", "protocol-analysis"]
 author_type: "admin"
