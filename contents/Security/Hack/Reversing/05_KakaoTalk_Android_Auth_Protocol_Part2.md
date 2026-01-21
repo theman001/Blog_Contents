@@ -31,8 +31,6 @@ X-VC는 다음과 같은 문자열을 기반으로 생성된다.
 ```text
 BARD|{User-Agent}|DANTE|{AccountKey}|SIAN
 ```
-
-
 위 문자열을 **SHA-512**로 해싱한 뒤,  
 결과 Hex 문자열의 **앞 16자리**를 X-VC 값으로 사용한다.
 
