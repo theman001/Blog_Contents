@@ -157,6 +157,10 @@ try {
       WHERE
         reports.content_md IS DISTINCT FROM EXCLUDED.content_md
         OR reports.description IS DISTINCT FROM EXCLUDED.description
+        OR reports.title IS DISTINCT FROM EXCLUDED.title
+        OR reports.author_type IS DISTINCT FROM EXCLUDED.author_type
+        OR reports.tags IS DISTINCT FROM EXCLUDED.tags
+        OR reports.category_id IS DISTINCT FROM EXCLUDED.category_id
       `,
       [
         slug,
