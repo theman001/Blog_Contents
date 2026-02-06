@@ -131,7 +131,7 @@ ML 실험 관리 도구 **MLflow**를 완전 관리형 서버리스 서비스로
 ---
 
 ## 결론
-이번 Data & ML 업데이트는 **‘통합(Integration)’**과 **‘지능화(Intelligence)’**로 요약됩니다.
+이번 Data & ML 업데이트는 **통합**(Integration)과 **지능화**(Intelligence)로 요약됩니다.
 
 - **S3 Tables / Unified Studio**
   → 데이터 사일로 제거, 접근성 극대화  
