@@ -29,33 +29,27 @@ AWS 어카운트 팀은 1,000시간이 넘는 방대한 분량의 콘텐츠를 �
 이번 행사는 총 4개의 주요 세션으로 구성되었으며, 각 분야의 AWS 전문가(SA, TAM)들이 발표를 맡았습니다.
 
 ### Session 1: Keynote Summary
-*   **발표:** 조인숙 Sr. Manager (TMEGS Solutions Architect)
 *   **핵심 내용:** 컴퓨팅 환경의 근본적인 변화와 **'AI 에이전트(Agent)'** 시대의 도래를 다룹니다. 인프라를 넘어 업무(Work) 자체를 추상화하는 '결과의 추상화' 개념과 이를 통해 변화하는 개발자의 역할(르네상스 개발자)을 조명합니다[4].
 
 ### Session 2: Game Industry Trends & GenAI
-*   **발표:** 조인숙 Sr. Manager
 *   **핵심 내용:** 2025년 글로벌 게임 시장의 트렌드 분석과 함께, 실제 게임사들이 생성형 AI를 어떻게 활용하고 있는지 살펴봅니다. 특히 **앵그리버드(Angry Birds)** 개발사인 **Rovio**가 생성형 AI를 도입하여 에셋 제작 파이프라인을 어떻게 혁신했는지 구체적인 사례를 통해 알아봅니다[2, 5, 6].
 
 ### Session 3: Tech Updates (Core Services & Data/ML)
 이 세션은 두 부분으로 나뉘어 진행되었습니다.
 
 **Part 1. Core Services**
-*   **발표:** 이평 TAM (Technical Account Manager)
 *   **핵심 내용:** Compute, Storage, Database, Networking, Security 등 AWS의 근간이 되는 코어 서비스들의 최신 업데이트를 정리합니다. 차세대 칩셋인 **Graviton5**와 고성능 인스턴스, 그리고 비용 효율적인 스토리지 관리 기능 등이 소개됩니다[1, 7].
 
 **Part 2. Data & ML**
-*   **발표:** 장준성 SA (Solutions Architect)
 *   **핵심 내용:** 데이터 분석과 머신러닝(ML) 워크로드를 위한 업데이트입니다. **Amazon S3 Tables**를 통한 Apache Iceberg^1 지원, **Amazon DataZone Unified Studio**를 통한 데이터 통합 관리, 그리고 대규모 분산 학습을 위한 **SageMaker HyperPod**^2의 기능 강화 등이 다뤄집니다[3, 8].
 
 ### Session 4: AI & GenAI Strategy
-*   **발표:** 강병하 님 / 유재형 TAM
 *   **핵심 내용:** AWS의 최신 AI 포트폴리오를 소개합니다. 한국어를 지원하는 **Amazon Nova 2 Sonic** 모델, 사양(Spec) 기반 개발 도구인 **Amazon Q**, 그리고 개발/보안/운영을 자율적으로 수행하는 **Frontier Agents** 3종 세트(Kiro, Security, DevOps)에 대해 심도 있게 다룹니다[9-11].
 
 ## 3. 소통 및 지원 채널
 
 이번 리캡 행사는 단순한 정보 전달에 그치지 않고, 실제 스마일게이트의 프로젝트에 적용할 수 있도록 지속적인 소통 채널을 운영합니다.
-*   **Slack 채널:** `#ext-aws-sgp-support` 채널을 통해 세션 내용에 대한 질의응답 및 기술 지원 요청이 가능합니다[12, 13].
-*   **Office Hours:** 매주 목요일 진행되는 오피스 아워를 통해, 관심 있는 기술 주제에 대한 심층적인 논의(Deep Dive)나 PoC(개념 증명) 지원을 받을 수 있습니다[12, 14].
+*   **Office Hours:** 매주 목요일 진행되는 오피스 아워를 통해, 관심 있는 기술 주제에 대한 심층적인 논의(Deep Dive)나 PoC(개념 증명) 지원을 받을 수 있습니다.
 
 ---
 **각주**
