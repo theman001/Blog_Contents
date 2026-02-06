@@ -1,5 +1,5 @@
 ---
-title: "[AWS-re:Invent] #3. Game Industry: 2025 게임 트렌드와 GenAI"
+title: "[AWS re:Invent] #3. Game Industry: 2025 게임 트렌드와 GenAI"
 description: "2025년 글로벌 게임 시장의 3대 키워드(콘솔 성장, ARPPU 하락, APAC) 분석과 Rovio 및 New World 사례로 보는 생성형 AI 기반 개발·운영 혁신 전략"
 tags: ["Game Industry", "GenAI", "Rovio", "Amazon Games", "Market Trend"]
 author_type: "admin"

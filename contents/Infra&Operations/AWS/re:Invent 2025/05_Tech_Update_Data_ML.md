@@ -1,5 +1,5 @@
 ---
-title: "[AWS-re:Invent] #5. Data & ML: 데이터 혁신을 위한 신규 분석 도구들"
+title: "[AWS re:Invent] #5. Data & ML: 데이터 혁신을 위한 신규 분석 도구들"
 description: "S3 Tables와 Unified Studio, 그리고 SageMaker HyperPod 등 데이터 사일로를 제거하고 ML 개발 속도를 가속화하는 통합 분석 환경과 인프라 업데이트 총정리"
 tags: ["AWS", "Data Analytics", "Machine Learning", "S3 Tables", "SageMaker", "Unified Studio"]
 author_type: "admin"

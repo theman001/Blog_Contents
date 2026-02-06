@@ -1,5 +1,5 @@
 ---
-title: "[AWS-re:Invent] #2. Keynote: 컴퓨팅의 미래와 AI 에이전트"
+title: "[AWS re:Invent] #2. Keynote: 컴퓨팅의 미래와 AI 에이전트"
 description: "re:Invent 2025 키노트 심층 분석: '결과의 추상화'로 진화하는 클라우드, AI 에이전트 풀스택 전략, 그리고 르네상스 개발자의 새로운 역할"
 tags: ["AWS", "Keynote", "AI Agent", "Bedrock", "Nova", "Smilegate"]
 author_type: "admin"

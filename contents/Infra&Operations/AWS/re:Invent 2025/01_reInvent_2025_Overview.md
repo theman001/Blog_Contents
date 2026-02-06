@@ -1,5 +1,5 @@
 ---
-title: "[AWS-re:Invent] #1. 2025 re:Cap 행사 개요 및 아젠다"
+title: "[AWS re:Invent] #1. 2025 re:Cap 행사 개요 및 아젠다"
 description: "스마일게이트를 위해 AWS가 준비한 re:Invent 2025 리캡 행사의 기획 의도와 방대한 글로벌 컨퍼런스를 3시간으로 압축한 핵심 아젠다 소개"
 tags: ["AWS", "re:Invent", "Conference", "Smilegate", "Cloud Strategy"]
 author_type: "admin"

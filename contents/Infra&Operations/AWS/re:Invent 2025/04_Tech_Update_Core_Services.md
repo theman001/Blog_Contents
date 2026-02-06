@@ -1,5 +1,5 @@
 ---
-title: "[AWS-re:Invent] #4. Tech Update: 코어 인프라 서비스 업데이트"
+title: "[AWS re:Invent] #4. Tech Update: 코어 인프라 서비스 업데이트"
 description: "Graviton5 칩셋과 M9g 인스턴스, Lambda Durable Functions, 그리고 S3 초대용량 객체 지원까지 성능·비용·운영 효율을 동시에 개선하는 AWS 코어 인프라 핵심 업데이트 정리"
 tags: ["AWS", "Infrastructure", "Compute", "Graviton5", "Database", "Serverless"]
 author_type: "admin"

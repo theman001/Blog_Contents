@@ -1,5 +1,5 @@
 ---
-title: "[AWS-re:Invent] #6. AI & GenAI: Nova와 Frontier Agents"
+title: "[AWS re:Invent] #6. AI & GenAI: Nova와 Frontier Agents"
 description: "한국어를 듣고 말하는 Nova 2 Sonic, 사양(Spec) 기반 개발 도구 Kiro, 그리고 개발·보안·운영을 혁신하는 자율형 Frontier Agents 3종 세트 총정리"
 tags: ["AWS", "GenAI", "Nova", "Agent", "Kiro", "DevOps", "Bedrock"]
 author_type: "admin"
