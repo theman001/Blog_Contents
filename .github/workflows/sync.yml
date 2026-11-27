@@ -26,8 +26,7 @@ jobs:
 
       # 3. 의존성 설치
       - name: Install dependencies
-        run: |
-          npm install gray-matter pg mime-types @aws-sdk/client-s3
+        run: npm ci
 
       # ------------------------------------
       # 4️⃣ 이미지 변경 여부 감지
@@ -62,5 +61,9 @@ jobs:
       - name: Sync markdown to database
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          # Intentional mass-delete guard (see scripts/sync_to_db.js). Set this repo
+          # variable to "1" in Settings -> Secrets and variables -> Actions -> Variables
+          # only for a deliberate large deletion, then remove it again afterwards.
+          ALLOW_MASS_DELETE: ${{ vars.ALLOW_MASS_DELETE }}
         run: |
           node scripts/sync_to_db.js

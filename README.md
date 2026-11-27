@@ -1,165 +1,88 @@
 # Blog_Contents
 
-# 📝 게시글 작성 가이드 (Blog Contents)
+IT Security Blog의 콘텐츠 레포입니다. `contents/**` 가 `main` 에 push 되면
+`.github/workflows/sync.yml` 이 돌아가 마크다운을 Neon DB(`reports`/`categories`)에
+동기화하고, 변경된 `assets/*` 를 R2에 업로드합니다. `main` 에 직접 커밋/push 하지
+말고 브랜치에서 작업해 PR로 올리세요 — PR에는 `.github/workflows/lint-contents.yml`
+이 DB 쓰기 없이 구조/필수 필드를 검사합니다.
 
-이 문서는 IT Security Blog의 **게시글 작성 규칙**을 정의합니다.  
-모든 게시글은 Markdown(`.md`) 형식으로 작성되며,  
-정적 웹 블로그에서 자동으로 파싱·렌더링됩니다.
-
----
-
-## 📁 게시글 작성 위치
-
-모든 게시글 파일은 아래 디렉터리에 작성해야 합니다.
+## 디렉터리 구조
 
 ```
 contents/
+  tech/        _category.md            # name: "기술"
+    security/  _category.md            # name: "보안"
+      reversing/ _category.md          # name: "리버싱"
+        sample-android-auth.md
+  trends/      _category.md            # name: "동향·사건사고"
+  essays/      _category.md            # name: "사유"
+    why-security-learns-late.md
 ```
 
-> ⚠️ 해당 경로 외의 파일은 게시글로 인식되지 않습니다.
+- 최상위 폴더는 정확히 `tech`, `trends`, `essays` 셋만 허용됩니다(= 섹션). `essays`
+  는 하위 폴더 없이 평평하게 글을 둡니다.
+- 폴더/파일 이름(확장자 제외)은 `^[a-z0-9]+(-[a-z0-9]+)*$` 만 허용합니다. 영소문자,
+  숫자, 하이픈만 쓰고, 번호 접두사(`01-` 등)는 쓰지 않습니다. 정렬은 날짜순입니다.
+- 글의 slug = `contents/` 기준 상대경로에서 `.md` 를 뗀 값입니다
+  (예: `tech/security/reversing/sample-android-auth`).
+- 폴더의 화면 표시 이름은 그 폴더의 `_category.md` 의 `name` 필드에서 읽습니다.
+  `_category.md` 가 없으면 폴더명을 그대로 이름으로 씁니다.
+- `_category.md` 자체는 글이 아닙니다 — DB의 `reports` 테이블에 올라가지 않고,
+  본문은 무시됩니다. front matter는 `name` 하나만 봅니다:
 
+  ```yaml
+  ---
+  name: "보안"
+  ---
+  ```
+
+## 글 Front Matter
+
+```yaml
 ---
-
-## 📄 파일 작성 규칙
-
-### 1️⃣ 파일 형식
-- 확장자: `.md`
-- 파일명 권장 규칙:
-
-```
-Num. title.md
-```
-
-예시:
-```
-01. static-web-hosting-test.md
-```
-
----
-
-## 🧩 Front Matter (필수)
-
-모든 게시글은 **파일 최상단에 YAML Front Matter를 반드시 포함**해야 합니다.
-
-```md
----
-title: "정적 웹 호스팅 테스트용 글"
-description: 
-tags: ["test"]
+title: "글 제목"             # 필수
+description: "목록/SEO용 요약" # 필수 — 비어 있으면 CI(lint-contents) 실패
+tags: ["reversing"]          # 배열, 소문자 권장
 author_type: "admin"
-date: 2026-01-12
+date: 2026-11-20             # YYYY-MM-DD, 필수
+related: "tech/security/reversing/sample-android-auth"  # 선택, essays 글에서만 사용
 ---
 ```
 
-### 필드 설명
+- `related` 은 다른 글을 가리킬 때만 씁니다. 글 경로(`tech/.../slug`) 또는
+  `https://<도메인>/posts/<경로>` 형태의 URL을 모두 쓸 수 있고, 동기화 시 경로만
+  남겨 `reports.related_slug` 에 저장합니다.
+  - 자기 자신을 가리키면 동기화가 실패합니다.
+  - 대상 글이 존재하지 않으면 경고만 출력되고 값은 그대로 저장됩니다(글이 나중에
+    생기거나, 프론트에서 조용히 카드를 숨기는 걸 전제로 합니다).
 
-| 필드 | 설명 |
-|---|---|
-| `title` | 게시글 제목/파일제목과 동일한 넘버링 포함 |
-| `tags` | 게시글 태그 (배열 형식) |
-| `author_type` | 작성자 유형 (`admin`, `guest`, `test` 등) |
-| `date` | 게시일 (YYYY-MM-DD 형식) |
+### 작성 시 유의사항
 
-> ⚠️ Front Matter는 반드시 **파일의 첫 줄부터 시작**해야 합니다.
+- Front Matter는 파일 첫 줄부터 시작하고, 본문과는 빈 줄 1줄로 구분합니다.
+- 날짜는 실제 게시일 기준, `YYYY-MM-DD` 로 적습니다.
+- 코드 블록에는 언어를 지정합니다.
+- 이미지는 `./assets/파일명` 형식으로 참조합니다(동기화 시 R2 URL로 치환됩니다).
+- 코드 블록 안에 대괄호(`[`, `]`)가 있으면 렌더링이 깨질 수 있습니다. 코드펜스
+  언어를 `text` 로 쓰거나, 문제되는 줄을 인라인 코드로 감싸 확인하세요.
 
-### 문서 작성 시 유의사항
-- 코드블럭 내 대괄호가 포함된 경우 렌더링 오류가 발생할 수 있음
-- 해결방법 :
-   ```text
-   `` `bash
-   내용
-   `` `
+## 로컬에서 확인하기
 
-    -> 다음과 같이 작성
-   `` `text
-   내용
-   `` `
-
-    * 렌더링 방지를 위해 `` ` 로 작성했으나, 실제 문서 작성시 붙여서 작성할 것.   
-   ```
----
-
-## ✍️ 본문 작성
-
-Front Matter 이후부터는 자유롭게 Markdown 문법을 사용하여 작성합니다.
-
-```md
-## 개요
-이 글은 정적 웹 블로그 환경에서 게시글 렌더링을 테스트하기 위한 글입니다.
-`` `text   //실제 작성 시 띄워쓰기 없이 작성할 것.
-안녕하세요.
-`` `      //실제 작성 시 띄워쓰기 없이 작성할 것.
-
-## 내용
-- Cloudflare Pages 배포 확인
-- Markdown 파싱 동작 테스트
-- 메타데이터 정상 인식 여부 확인
-
-## 결론
-게시글이 정상적으로 출력됨을 확인했습니다.
-```
-
----
-
-## ✅ 작성 시 유의사항
-
-- Front Matter와 본문 사이에 **빈 줄 1줄 유지**
-- `date`는 실제 게시일 기준으로 작성
-- 태그는 **소문자 사용 권장**
-- 코드 블록에는 반드시 언어 지정
-
-```md
 ```bash
-npm install
-```
-```
-
-- 이미지 사용 시 상대 경로 기준 작성
-
-```md
-![example](/static/assets/example.png)
+npm ci
+npm test              # scripts/lib 순수 함수 단위 테스트 (DB 불필요)
+npm run sync:dry-run  # 파일만 읽어 upsert/delete 될 내용을 출력, DB에 쓰지 않음
 ```
 
----
+`DATABASE_URL` 환경변수가 설정돼 있으면 dry-run이 현재 DB와 비교해 삭제될
+slug까지 보여줍니다(SELECT만 수행, 쓰기 없음). 설정돼 있지 않으면 파일 기준
+upsert 목록만 보여줍니다 — PR의 `lint-contents.yml` 이 바로 이 모드로 돕니다.
 
-## 🧪 예시 전체 게시글
+## 안전장치
 
-```md
----
-title: "정적 웹 호스팅 테스트용 글"
-tags: ["static", "test"]
-author_type: "admin"
-date: 2026-01-12
----
-
-## 개요
-정적 블로그 동작 여부를 확인하기 위한 테스트 게시글입니다.
-
-## 테스트 항목
-- 게시글 목록 노출
-- 상세 페이지 이동
-- 태그 필터링
-
-## 마무리
-Cloudflare Pages 환경에서 정상 동작을 확인했습니다.
-```
-
----
-
-## ✨ 확장용 메타데이터 (선택)
-
-추후 기능 확장을 위해 아래 필드를 추가할 수 있습니다.
-
-```md
-description: "정적 웹 호스팅 테스트 게시글"
-thumbnail: "/static/assets/thumbnail.png"
-draft: false
-```
-
----
-
-## 📌 요약
-
-> **게시글은 `contents/` 디렉터리에  
-> Markdown 형식으로 작성하며,  
-> YAML Front Matter는 필수입니다.**
+- **대량 삭제 가드**: 이번 동기화로 지워질 글 수가 10개를 초과하거나 현재 DB
+  글 수의 50%를 초과하면, 환경변수 `ALLOW_MASS_DELETE=1` 없이는 동기화가 중단됩니다.
+  GitHub Actions에서는 저장소 변수(Settings → Secrets and variables → Actions →
+  Variables)로 `ALLOW_MASS_DELETE` 를 설정하세요. 의도적인 대량 삭제가 끝나면
+  다시 지우거나 `0` 으로 되돌리는 걸 권장합니다.
+- 파일이 하나도 없으면 동기화 자체가 중단됩니다.
+- 이름 규칙/필수 필드를 위반하면 dry-run과 실제 동기화 모두 실패합니다.
