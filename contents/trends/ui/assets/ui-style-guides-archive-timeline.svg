@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<rect x="0" y="0" width="1200" height="675" fill="#f8fafc"/>
+<text x="600" y="44" text-anchor="middle" font-size="28" font-weight="bold" fill="#0f172a">시대별 대표 UI 스타일 가이드</text>
+<rect x="30" y="76" width="216" height="540" rx="12" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+<rect x="30" y="76" width="216" height="52" rx="12" fill="#1d4ed8"/>
+<text x="138" y="110" text-anchor="middle" font-size="22" font-weight="bold" fill="#ffffff">1980년대</text>
+<rect x="40" y="144" width="196" height="40" rx="7" fill="#ffffff" stroke="#1d4ed8" stroke-width="1"/>
+<text x="138" y="170" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">1980 Apple Lisa</text>
+<rect x="40" y="195" width="196" height="40" rx="7" fill="#ffffff" stroke="#1d4ed8" stroke-width="1"/>
+<text x="138" y="221" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">1982 Apple IIe</text>
+<rect x="40" y="246" width="196" height="40" rx="7" fill="#ffffff" stroke="#1d4ed8" stroke-width="1"/>
+<text x="138" y="272" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">1986 Windows SDK</text>
+<rect x="40" y="297" width="196" height="40" rx="7" fill="#ffffff" stroke="#1d4ed8" stroke-width="1"/>
+<text x="138" y="323" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">1986 Apple Desktop HIG</text>
+<rect x="40" y="348" width="196" height="40" rx="7" fill="#ffffff" stroke="#1d4ed8" stroke-width="1"/>
+<text x="138" y="374" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">1988 DECwindows XUI</text>
+<rect x="40" y="399" width="196" height="40" rx="7" fill="#ffffff" stroke="#1d4ed8" stroke-width="1"/>
+<text x="138" y="425" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">1989 OPEN LOOK</text>
+<rect x="40" y="450" width="196" height="40" rx="7" fill="#ffffff" stroke="#1d4ed8" stroke-width="1"/>
+<text x="138" y="476" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">1980년대 GEM/TOS</text>
+<rect x="258" y="76" width="216" height="540" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<rect x="258" y="76" width="216" height="52" rx="12" fill="#15803d"/>
+<text x="366" y="110" text-anchor="middle" font-size="22" font-weight="bold" fill="#ffffff">1990년대</text>
+<rect x="268" y="144" width="196" height="40" rx="7" fill="#ffffff" stroke="#15803d" stroke-width="1"/>
+<text x="366" y="170" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">1990 NeXTstep</text>
+<rect x="268" y="195" width="196" height="40" rx="7" fill="#ffffff" stroke="#15803d" stroke-width="1"/>
+<text x="366" y="221" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">1991 Amiga</text>
+<rect x="268" y="246" width="196" height="40" rx="7" fill="#ffffff" stroke="#15803d" stroke-width="1"/>
+<text x="366" y="272" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">1991 CUA · Motif</text>
+<rect x="268" y="297" width="196" height="40" rx="7" fill="#ffffff" stroke="#15803d" stroke-width="1"/>
+<text x="366" y="323" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">1991 PenPoint</text>
+<rect x="268" y="348" width="196" height="40" rx="7" fill="#ffffff" stroke="#15803d" stroke-width="1"/>
+<text x="366" y="374" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">1992 Macintosh HIG</text>
+<rect x="268" y="399" width="196" height="40" rx="7" fill="#ffffff" stroke="#15803d" stroke-width="1"/>
+<text x="366" y="425" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">1994 SGI Indigo Magic</text>
+<rect x="268" y="450" width="196" height="40" rx="7" fill="#ffffff" stroke="#15803d" stroke-width="1"/>
+<text x="366" y="476" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">1995 Taligent</text>
+<rect x="268" y="501" width="196" height="40" rx="7" fill="#ffffff" stroke="#15803d" stroke-width="1"/>
+<text x="366" y="527" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">1996 Newton · CDE</text>
+<rect x="268" y="552" width="196" height="40" rx="7" fill="#ffffff" stroke="#15803d" stroke-width="1"/>
+<text x="366" y="578" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">1999 Java · BeOS</text>
+<rect x="486" y="76" width="216" height="540" rx="12" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+<rect x="486" y="76" width="216" height="52" rx="12" fill="#b45309"/>
+<text x="594" y="110" text-anchor="middle" font-size="22" font-weight="bold" fill="#ffffff">2000년대</text>
+<rect x="496" y="144" width="196" height="40" rx="7" fill="#ffffff" stroke="#b45309" stroke-width="1"/>
+<text x="594" y="170" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">2000 Aqua</text>
+<rect x="496" y="195" width="196" height="40" rx="7" fill="#ffffff" stroke="#b45309" stroke-width="1"/>
+<text x="594" y="221" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">2001 Windows XP</text>
+<rect x="496" y="246" width="196" height="40" rx="7" fill="#ffffff" stroke="#b45309" stroke-width="1"/>
+<text x="594" y="272" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">2002 GNOME HIG 1.0</text>
+<rect x="496" y="297" width="196" height="40" rx="7" fill="#ffffff" stroke="#b45309" stroke-width="1"/>
+<text x="594" y="323" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">2003 BlackBerry</text>
+<rect x="496" y="348" width="196" height="40" rx="7" fill="#ffffff" stroke="#b45309" stroke-width="1"/>
+<text x="594" y="374" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">2003 Palm OS · Nokia</text>
+<rect x="496" y="399" width="196" height="40" rx="7" fill="#ffffff" stroke="#b45309" stroke-width="1"/>
+<text x="594" y="425" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">2006 Microsoft Office</text>
+<rect x="496" y="450" width="196" height="40" rx="7" fill="#ffffff" stroke="#b45309" stroke-width="1"/>
+<text x="594" y="476" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">2007 Windows Mobile 6</text>
+<rect x="496" y="501" width="196" height="40" rx="7" fill="#ffffff" stroke="#b45309" stroke-width="1"/>
+<text x="594" y="527" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">2008 iPhone HIG</text>
+<rect x="496" y="552" width="196" height="40" rx="7" fill="#ffffff" stroke="#b45309" stroke-width="1"/>
+<text x="594" y="578" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">2008 Surface</text>
+<rect x="714" y="76" width="216" height="540" rx="12" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+<rect x="714" y="76" width="216" height="52" rx="12" fill="#be185d"/>
+<text x="822" y="110" text-anchor="middle" font-size="22" font-weight="bold" fill="#ffffff">2010년대</text>
+<rect x="724" y="144" width="196" height="40" rx="7" fill="#ffffff" stroke="#be185d" stroke-width="1"/>
+<text x="822" y="170" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">2010 iPad · WP7 · webOS</text>
+<rect x="724" y="195" width="196" height="40" rx="7" fill="#ffffff" stroke="#be185d" stroke-width="1"/>
+<text x="822" y="221" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">2012 Android Design</text>
+<rect x="724" y="246" width="196" height="40" rx="7" fill="#ffffff" stroke="#be185d" stroke-width="1"/>
+<text x="822" y="272" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">2013 iOS 7 HIG · Glass</text>
+<rect x="724" y="297" width="196" height="40" rx="7" fill="#ffffff" stroke="#be185d" stroke-width="1"/>
+<text x="822" y="323" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">2014 Kinect HIG 2.0</text>
+<rect x="724" y="348" width="196" height="40" rx="7" fill="#ffffff" stroke="#be185d" stroke-width="1"/>
+<text x="822" y="374" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">2015 Material Design</text>
+<rect x="724" y="399" width="196" height="40" rx="7" fill="#ffffff" stroke="#be185d" stroke-width="1"/>
+<text x="822" y="425" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">2015 Windows 10 UWP</text>
+<rect x="724" y="450" width="196" height="40" rx="7" fill="#ffffff" stroke="#be185d" stroke-width="1"/>
+<text x="822" y="476" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">2016 Google Cardboard</text>
+<rect x="724" y="501" width="196" height="40" rx="7" fill="#ffffff" stroke="#be185d" stroke-width="1"/>
+<text x="822" y="527" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">2018 Material v2</text>
+<rect x="724" y="552" width="196" height="40" rx="7" fill="#ffffff" stroke="#be185d" stroke-width="1"/>
+<text x="822" y="578" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">2018 Samsung One UI</text>
+<rect x="942" y="76" width="216" height="540" rx="12" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+<rect x="942" y="76" width="216" height="52" rx="12" fill="#6d28d9"/>
+<text x="1050" y="110" text-anchor="middle" font-size="22" font-weight="bold" fill="#ffffff">2020년대</text>
+<rect x="952" y="144" width="196" height="40" rx="7" fill="#ffffff" stroke="#6d28d9" stroke-width="1"/>
+<text x="1050" y="170" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">2021 KDE HIG</text>
+<rect x="952" y="195" width="196" height="40" rx="7" fill="#ffffff" stroke="#6d28d9" stroke-width="1"/>
+<text x="1050" y="221" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">2022 Samsung Smart TV</text>
+<rect x="952" y="246" width="196" height="40" rx="7" fill="#ffffff" stroke="#6d28d9" stroke-width="1"/>
+<text x="1050" y="272" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">2024 RISC OS v4</text>
+<rect x="952" y="297" width="196" height="40" rx="7" fill="#ffffff" stroke="#6d28d9" stroke-width="1"/>
+<text x="1050" y="323" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">2026 현재 공식 사이트:</text>
+<rect x="952" y="348" width="196" height="40" rx="7" fill="#ffffff" stroke="#6d28d9" stroke-width="1"/>
+<text x="1050" y="374" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">Apple HIG</text>
+<rect x="952" y="399" width="196" height="40" rx="7" fill="#ffffff" stroke="#6d28d9" stroke-width="1"/>
+<text x="1050" y="425" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">Design for Android</text>
+<rect x="952" y="450" width="196" height="40" rx="7" fill="#ffffff" stroke="#6d28d9" stroke-width="1"/>
+<text x="1050" y="476" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">GNOME HIG</text>
+<rect x="952" y="501" width="196" height="40" rx="7" fill="#ffffff" stroke="#6d28d9" stroke-width="1"/>
+<text x="1050" y="527" text-anchor="middle" font-size="15" font-weight="normal" fill="#0f172a">Windows Design basics</text>
+<text x="600" y="650" text-anchor="middle" font-size="14" font-weight="normal" fill="#475569">원문 aresluna.org/ui-style-guides 목록의 연도를 바탕으로 일부를 골라 재구성</text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpiZTJlZjYwMC0zMTAyLTQ2NjgtOWEyMC0yMWI2YzliMjdkMDgAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaMvWCx8ik8zHhRltO3TUJ9oAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDpiYzUxZGU4Ny0zZjM1LTQ2ZGEtOGJmMi1mNTQ1NjkzMDA2YTRscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNokCTfkCF5jOCgKe4LiwyIOQAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFgghMDUNnBr1F+koHd6CUBcGsULI4XNgJzfP5wIkJiMBMakZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaMC3OLH6GQKGHBf7/OBuFJkAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIETV2NASwDPmrcAUNbTqpIYzmCjMMItbRJiNhDljc93qZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GSxrZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmJlMmVmNjAwLTMxMDItNDY2OC05YTIwLTIxYjZjOWIyN2QwOC9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmJkMzVmNTFkLWY4NmYtNGQxNS1hOTc0LTU4ZGM3MzIxMGMxOHJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCCEwNQ2cGvUX6Sgd3oJQFwaxQsjhc2AnN8/nAiQmIwExqJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggwxFrcUtYpdOxRSmdwiFyZm1vsuclr08otRZKrhgK4nmiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFgg6MPrSEPYoOPcYeeMDghXtuel+nYSAcn3EwByf2paoqJ0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQCElVK7UKhVKADd7oLNhzp7Q7uX4tK9F3IqANya5epOXHrE4ZUu6ZyHayS8fgYxORyskKqWtauLpECtLL4AONBk=</c2pa:manifest></metadata></svg>

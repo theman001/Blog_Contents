@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<rect x="0" y="0" width="1200" height="675" fill="#f8fafc"/>
+<text x="600" y="40" text-anchor="middle" font-size="28" font-weight="bold" fill="#0f172a">Apple과 Microsoft UI 가이드의 계보</text>
+<line x1="230.0" y1="80" x2="230.0" y2="600" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="230.0" y="74" text-anchor="middle" font-size="15" font-weight="bold" fill="#475569">1980</text>
+<line x1="423.0" y1="80" x2="423.0" y2="600" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="423.0" y="74" text-anchor="middle" font-size="15" font-weight="bold" fill="#475569">1990</text>
+<line x1="616.0" y1="80" x2="616.0" y2="600" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="616.0" y="74" text-anchor="middle" font-size="15" font-weight="bold" fill="#475569">2000</text>
+<line x1="809.0" y1="80" x2="809.0" y2="600" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="809.0" y="74" text-anchor="middle" font-size="15" font-weight="bold" fill="#475569">2010</text>
+<line x1="1002.0" y1="80" x2="1002.0" y2="600" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="1002.0" y="74" text-anchor="middle" font-size="15" font-weight="bold" fill="#475569">2020</text>
+<line x1="1117.8" y1="80" x2="1117.8" y2="600" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="1117.8" y="74" text-anchor="middle" font-size="15" font-weight="bold" fill="#475569">2026</text>
+<rect x="30" y="105" width="1150" height="150" rx="12" fill="#dbeafe" fill-opacity="0.55" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="45" y="176" text-anchor="start" font-size="19" font-weight="bold" fill="#1d4ed8">Apple Mac</text>
+<text x="45" y="200" text-anchor="start" font-size="13" font-weight="normal" fill="#334155">Lisa → Mac OS → Aqua</text>
+<line x1="230.0" y1="180" x2="1117.8" y2="180" stroke="#1d4ed8" stroke-width="3"/>
+<circle cx="230.0" cy="180" r="7" fill="#ffffff" stroke="#1d4ed8" stroke-width="3"/>
+<text x="230.0" y="144" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f172a">Lisa</text>
+<text x="230.0" y="163" text-anchor="middle" font-size="13" font-weight="normal" fill="#334155">1980</text>
+<circle cx="345.8" cy="180" r="7" fill="#ffffff" stroke="#1d4ed8" stroke-width="3"/>
+<text x="345.8" y="208" text-anchor="middle" font-size="13" font-weight="normal" fill="#334155">1986</text>
+<text x="345.8" y="226" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f172a">Desktop HIG</text>
+<circle cx="461.6" cy="180" r="7" fill="#ffffff" stroke="#1d4ed8" stroke-width="3"/>
+<text x="461.6" y="144" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f172a">Macintosh HIG</text>
+<text x="461.6" y="163" text-anchor="middle" font-size="13" font-weight="normal" fill="#334155">1992</text>
+<circle cx="538.8" cy="180" r="7" fill="#ffffff" stroke="#1d4ed8" stroke-width="3"/>
+<text x="538.8" y="208" text-anchor="middle" font-size="13" font-weight="normal" fill="#334155">1996</text>
+<text x="538.8" y="226" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f172a">Mac OS 8</text>
+<circle cx="616.0" cy="180" r="7" fill="#ffffff" stroke="#1d4ed8" stroke-width="3"/>
+<text x="616.0" y="144" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f172a">Aqua</text>
+<text x="616.0" y="163" text-anchor="middle" font-size="13" font-weight="normal" fill="#334155">2000</text>
+<circle cx="693.2" cy="180" r="7" fill="#ffffff" stroke="#1d4ed8" stroke-width="3"/>
+<text x="693.2" y="208" text-anchor="middle" font-size="13" font-weight="normal" fill="#334155">2004</text>
+<text x="693.2" y="226" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f172a">Apple HIG</text>
+<circle cx="847.6" cy="180" r="7" fill="#ffffff" stroke="#1d4ed8" stroke-width="3"/>
+<text x="847.6" y="144" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f172a">OS X 가이드</text>
+<text x="847.6" y="163" text-anchor="middle" font-size="13" font-weight="normal" fill="#334155">2012</text>
+<circle cx="1117.8" cy="180" r="7" fill="#ffffff" stroke="#1d4ed8" stroke-width="3"/>
+<text x="1117.8" y="208" text-anchor="middle" font-size="13" font-weight="normal" fill="#334155">2026</text>
+<text x="1117.8" y="226" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f172a">Apple HIG</text>
+<rect x="30" y="255" width="1150" height="150" rx="12" fill="#fce7f3" fill-opacity="0.55" stroke="#be185d" stroke-width="1.5"/>
+<text x="45" y="326" text-anchor="start" font-size="19" font-weight="bold" fill="#be185d">Apple iOS</text>
+<text x="45" y="350" text-anchor="start" font-size="13" font-weight="normal" fill="#334155">iPhone → iPad → iOS 7+</text>
+<line x1="770.4" y1="330" x2="1117.8" y2="330" stroke="#be185d" stroke-width="3"/>
+<circle cx="770.4" cy="330" r="7" fill="#ffffff" stroke="#be185d" stroke-width="3"/>
+<text x="770.4" y="294" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f172a">iPhone HIG</text>
+<text x="770.4" y="313" text-anchor="middle" font-size="13" font-weight="normal" fill="#334155">2008</text>
+<circle cx="809.0" cy="330" r="7" fill="#ffffff" stroke="#be185d" stroke-width="3"/>
+<text x="809.0" y="358" text-anchor="middle" font-size="13" font-weight="normal" fill="#334155">2010</text>
+<text x="809.0" y="376" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f172a">iPad HIG</text>
+<circle cx="866.9" cy="330" r="7" fill="#ffffff" stroke="#be185d" stroke-width="3"/>
+<text x="866.9" y="294" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f172a">iOS 7+ HIG</text>
+<text x="866.9" y="313" text-anchor="middle" font-size="13" font-weight="normal" fill="#334155">2013</text>
+<circle cx="1117.8" cy="330" r="7" fill="#ffffff" stroke="#be185d" stroke-width="3"/>
+<text x="1117.8" y="358" text-anchor="middle" font-size="13" font-weight="normal" fill="#334155">2026</text>
+<text x="1117.8" y="376" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f172a">Apple HIG</text>
+<rect x="30" y="415" width="1150" height="140" rx="12" fill="#dcfce7" fill-opacity="0.55" stroke="#15803d" stroke-width="1.5"/>
+<text x="45" y="486" text-anchor="start" font-size="19" font-weight="bold" fill="#15803d">Windows</text>
+<text x="45" y="510" text-anchor="start" font-size="13" font-weight="normal" fill="#334155">SDK → Win 10 → 현재</text>
+<line x1="345.8" y1="490" x2="1117.8" y2="490" stroke="#15803d" stroke-width="3"/>
+<circle cx="345.8" cy="490" r="7" fill="#ffffff" stroke="#15803d" stroke-width="3"/>
+<text x="345.8" y="454" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f172a">SDK 가이드</text>
+<text x="345.8" y="473" text-anchor="middle" font-size="13" font-weight="normal" fill="#334155">1986</text>
+<circle cx="461.6" cy="490" r="7" fill="#ffffff" stroke="#15803d" stroke-width="3"/>
+<text x="461.6" y="518" text-anchor="middle" font-size="13" font-weight="normal" fill="#334155">1992</text>
+<text x="461.6" y="536" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f172a">Windows Interface</text>
+<circle cx="519.5" cy="490" r="7" fill="#ffffff" stroke="#15803d" stroke-width="3"/>
+<text x="519.5" y="454" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f172a">Guidelines</text>
+<text x="519.5" y="473" text-anchor="middle" font-size="13" font-weight="normal" fill="#334155">1995</text>
+<circle cx="596.7" cy="490" r="7" fill="#ffffff" stroke="#15803d" stroke-width="3"/>
+<text x="596.7" y="518" text-anchor="middle" font-size="13" font-weight="normal" fill="#334155">1999</text>
+<text x="596.7" y="536" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f172a">UX 공식</text>
+<circle cx="635.3" cy="490" r="7" fill="#ffffff" stroke="#15803d" stroke-width="3"/>
+<text x="635.3" y="454" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f172a">XP Visual</text>
+<text x="635.3" y="473" text-anchor="middle" font-size="13" font-weight="normal" fill="#334155">2001</text>
+<circle cx="809.0" cy="490" r="7" fill="#ffffff" stroke="#15803d" stroke-width="3"/>
+<text x="809.0" y="518" text-anchor="middle" font-size="13" font-weight="normal" fill="#334155">2010</text>
+<text x="809.0" y="536" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f172a">Win 7·Vista</text>
+<circle cx="847.6" cy="490" r="7" fill="#ffffff" stroke="#15803d" stroke-width="3"/>
+<text x="847.6" y="454" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f172a">Windows 8</text>
+<text x="847.6" y="473" text-anchor="middle" font-size="13" font-weight="normal" fill="#334155">2012</text>
+<circle cx="905.5" cy="490" r="7" fill="#ffffff" stroke="#15803d" stroke-width="3"/>
+<text x="905.5" y="518" text-anchor="middle" font-size="13" font-weight="normal" fill="#334155">2015</text>
+<text x="905.5" y="536" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f172a">Win 10 UWP</text>
+<circle cx="1117.8" cy="490" r="7" fill="#ffffff" stroke="#15803d" stroke-width="3"/>
+<text x="1117.8" y="454" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f172a">Design basics</text>
+<text x="1117.8" y="473" text-anchor="middle" font-size="13" font-weight="normal" fill="#334155">2026</text>
+<line x1="372.8" y1="560" x2="453.9" y2="560" stroke="#b45309" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="413.4" y="580" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400e">1990년 전후 공백: IBM과 CUA 협업</text>
+<text x="600" y="650" text-anchor="middle" font-size="14" font-weight="normal" fill="#475569">원문 aresluna.org/ui-style-guides 목록의 연도 기준 (판본 일부 생략)</text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo3MzRiY2ZhOS1kYTEwLTQxZTktYjQyMS01MTk2MWY5N2Y3NTQAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaFVy0RP0gp36SdpXQFUI4YoAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo1MjA1NjY3Ni00ODgxLTQzYWEtOWQ0Yy1lN2JkZGRhMDBmMGJscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoZ1QkxzaMcP3vXYNHCjoYEgAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFgg+PpRNljzYMORMLsRv216lQ9PE4fkYkAxyP5vz2vHqZqkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaHwqeLb83gR83KuZQgJBwqkAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYINXvRnLO3hpAo4dzUOJ3nWqH7cyl/tCFcS/KSJ67kpyuZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GSZUZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjczNGJjZmE5LWRhMTAtNDFlOS1iNDIxLTUxOTYxZjk3Zjc1NC9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmNiOWZlMDhlLWQwZmItNDEzMS1iMDQ1LWY2YWQyMWE3ZDFjOXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCD4+lE2WPNgw5EwuxG/bXqVD08Th+RiQDHI/m/Pa8epmqJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggF5hwT132z2rLyLy/fzaEHO+BdSpo+Is/6bC381fHZUyiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggeOtBIvqch4v0NbNTM9OYrjA/BpdG6ST7K0B2EyvQrmF0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQHUN7V4NYXZzMHWCY+svFDdG8vEts8+m+TQsJqddpRhAKczlga6aPztgEEojT2lnqrZgj8OnNG6lbM7Ya8bHeeg=</c2pa:manifest></metadata></svg>
